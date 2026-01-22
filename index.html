@@ -359,6 +359,37 @@
       transform: translateY(-5px);
     }
 
+    .leetcode-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      background: rgba(0, 212, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .stat-card:hover {
+      border-color: var(--accent-blue);
+      transform: translateY(-5px);
+    }
+
+    .stat-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -384,6 +415,7 @@
       
       .nav-links {
         gap: 1rem;
+        font-size: 0.85rem;
       }
       
       .cta-buttons {
@@ -402,6 +434,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#leetcode">LeetCode</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -600,6 +633,48 @@
     </div>
   </section>
 
+  <section id="leetcode">
+    <div class="container">
+      <h2>🚀 LeetCode Journey</h2>
+      <div class="contact">
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
+          Sharpening problem-solving skills through algorithmic challenges and data structure implementations.
+        </p>
+        
+        <div class="leetcode-stats">
+          <div class="stat-card">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-label">Active Problem Solver</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">💡</div>
+            <div class="stat-label">Algorithm Enthusiast</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📈</div>
+            <div class="stat-label">Continuous Growth</div>
+          </div>
+        </div>
+
+        <div style="margin: 2rem 0;">
+          <h3 style="color: var(--accent-blue); margin-bottom: 1rem; font-size: 1.2rem;">Problem Categories</h3>
+          <div class="project-tags" style="justify-content: center;">
+            <span class="tag">Arrays & Strings</span>
+            <span class="tag">Dynamic Programming</span>
+            <span class="tag">Trees & Graphs</span>
+            <span class="tag">Linked Lists</span>
+            <span class="tag">Binary Search</span>
+            <span class="tag">Recursion & Backtracking</span>
+          </div>
+        </div>
+
+        <a href="https://leetcode.com/u/Aditya2203/" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+          View LeetCode Profile →
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section id="projects">
     <div class="container">
       <h2>Featured Projects</h2>
@@ -669,8 +744,8 @@
             </svg>
           </a>
         </div>
-        <p style="margin-top: 2rem; color: var(--text-secondary);">
-          📧 <a href="mailto:2207adityayadav@gmail.com" style="color: var(--accent-blue); text-decoration: none;">2207adityayadav@gmail.com</a>
+        <p style="margin-top: 2rem; color: var(--text-secondary); font-size: 1.1rem;">
+          📧 <a href="mailto:2207adityayadav@gmail.com" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">2207adityayadav@gmail.com</a>
         </p>
       </div>
     </div>
